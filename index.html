@@ -23,11 +23,6 @@
         <li><a class="nav-site__item" href="#">Про компанию</a></li>
       </ul>
       <a class="logo" href="#"></a>
-      <a class="language-switch" href="#">
-        <div class="language-globe"></div>
-        <p class="language-value">УКР</p>
-        <div class="language-toggle"></div>
-      </a>
       <ul class="nav-icons">
         <li class="nav-icons__item"><a href="#" class="nav-icons__item_profile"></a></li>
         <li class="nav-icons__item"><a href="#" class="nav-icons__item_wallet"></a></li>
@@ -35,18 +30,36 @@
         <li class="nav-icons__item"><a href="#" class="nav-icons__item_search"></a></li>
       </ul>
       <div class="nav-page-bg"></div>
-      <nav class="nav-page">
-        <a href="#advantages" class="nav-page__item">Преимущества</a>
-        <a href="#packages" class="nav-page__item">Пакеты</a>
-        <a href="#steps" class="nav-page__item">Что делать при повреждении экрана</a>
-        <a href="#questions" class="nav-page__item">Вопросы и ответы</a>
-        <a href="#picture" class="nav-page__item">Защита экрана</a>
+      <nav class="nav-page menu">
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="#advantages" class="nav-page__item nav-link">Преимущества</a>
+          </li>
+          <li class="nav-item current">
+            <a href="#packages" class="nav-page__item nav-link">Пакеты</a>
+          </li>
+          <li class="nav-item">
+            <a href="#steps" class="nav-page__item nav-link">Что делать при повреждении экрана</a>
+          </li>  
+          <li class="nav-item">
+            <a href="#questions" class="nav-page__item nav-link">Вопросы и ответы</a>
+          </li>  
+          <li class="nav-item">
+            <a href="#picture" class="nav-page__item nav-link">Защита экрана</a>
+          </li>  
+          <li class="nav-item">
+            <a class="language-switch nav-link" href="#">  
+              <div class="language-globe"></div>
+              <p class="language-value">УКР</p>
+              <div class="language-toggle"></div>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
 
-    <picture class="main-picture">
-        <a name="picture"></a>
+    <picture class="main-picture" id="picture">
       <h2 class="main-picture__title">Защита экрана</h2>
       <p class="main-picture__text">Разбить экран больше не страшно!</p>
       <div class="main-picture__bg_center"></div>
@@ -54,8 +67,7 @@
     </picture>
 
 
-    <section class="main-section-advantages">
-      <a name="advantages"></a>
+    <section class="main-section-advantages" id="advantages">
       <h1 class="advantages__title">Преимущества</h1>
       <div class="advantages__card-wrap">
         <div class="advantages__card-item">
@@ -136,32 +148,35 @@
       <div class="banner__background-img"></div>
     </picture>
 
-    <section class="main-section-steps">
-      <a name="steps"></a>
-      <h1 class="steps__title">Что делать при повреждении экрана</h1>
+    <section id="steps" class="main-section-steps">
+      <div class="steps__title">Что делать при повреждении экрана</div>
       <div class="steps__card-wrap">
         <div class="steps__card-item">
           <div class="steps-card-item_number">1</div>
-          <div class="steps-card-item_circle"></div>
-          <div class="steps-card-item_img step_1"></div>
+          <div class="steps-card-item_circle">
+            <img src="img/step1-bg-img_big.png" class="steps-card-item_img step_1"></img>
+          </div>
           <div class="steps-card-item_text">Обратиться в круглосуточную службу поддержки</div>
         </div>
         <div class="steps__card-item">
           <div class="steps-card-item_number">2</div>
-          <div class="steps-card-item_circle"></div>
-          <div class="steps-card-item_img step_2"></div>
+          <div class="steps-card-item_circle">
+            <img src="img/step2-bg-img_big.png" class="steps-card-item_img step_2"></img>
+          </div>
           <div class="steps-card-item_text">Отправить смартфон по адресу, указанному сотрудником сервисного центра</div>
         </div>
         <div class="steps__card-item">
           <div class="steps-card-item_number">3</div>
-          <div class="steps-card-item_circle"></div>
-          <div class="steps-card-item_img step_3"></div>
+          <div class="steps-card-item_circle">
+            <img src="img/step3-bg-img_big.png" class="steps-card-item_img step_3"></img>
+          </div>
           <div class="steps-card-item_text">Согласовать сроки выполнения ремонта экрана</div>
         </div>
         <div class="steps__card-item">
           <div class="steps-card-item_number">4</div>
-          <div class="steps-card-item_circle"></div>
-          <div class="steps-card-item_img step_4"></div>
+          <div class="steps-card-item_circle">
+            <img src="img/step4-bg-img_big.png" class="steps-card-item_img step_4"></img>
+          </div>
           <div class="steps-card-item_text">Получить отремонтированное устройство</div>
         </div>
       </div>
